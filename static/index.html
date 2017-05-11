@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather Application</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    </head>
+    <body>
+        <form onsubmit="return false">
+            <label id="desc">Enter the zip code for the area you would like to get the weather for</label><br />
+            <input type="text" name="postc" id="postcode"/><br />
+            <input type="button" name="button" id="buttonclick" value="Retrieve Weather Data"/>
+            <div id="weathersection">
+                <span id="invalid"></span>
+                <table>
+                    <tr>
+                        <td>City</td>
+                        <td>Temperature</td>
+                        <td>Wind Speed</td>
+                        <td>Weather Status</td>
+                    </tr>
+                    <tr>
+                        <td id="city"></td>
+                        <td id="temp">&nbsp;</td>
+                        <td id="windspeed">&nbsp;</td>
+                        <td id="weatherstatus">&nbsp;</td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+        <script type="text/javascript" src="main.js">
+        </script>
+    </body>
+</html>
